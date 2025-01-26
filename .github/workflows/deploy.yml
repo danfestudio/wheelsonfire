@@ -24,7 +24,7 @@ jobs:
           port: 22
 
           script: |
-            cd /home/sp/projects/wheelsonfire || exit 1            
+            cd /home/sp/project/wheelsonfire || exit 1            
             docker build -t wheelsonfire .
             docker stop wheelsonfire.com || true
             docker rm wheelsonfire.com || true
